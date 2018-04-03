@@ -2,7 +2,7 @@ def turn_count(board)
   counter = 0
   board.each do |player|
     puts "Player : #{player}"
-    if player.strip != " "
+    if player.strip != ""
       counter += 1
     end
   end
@@ -12,5 +12,5 @@ end
 def current_player(board)
   return turn_count(board)%2 == 1 ? "X" : "O"
 end
-
+board = ["O", "     ", " ", " ", "X", " ", " ", " ", " "]
 puts turn_count(board)
