@@ -15,4 +15,4 @@ def current_player(board)
 end
 
 board = Array.new(9, " ")
-turn_count(board)
+puts turn_count(board)
