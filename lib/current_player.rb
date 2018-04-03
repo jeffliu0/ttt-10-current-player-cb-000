@@ -8,11 +8,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  if turn_count(board)%2 == 1 do
-    return "X"
-  else
-    return "O"
-  end
+  return turn_count(board)%2 == 1 ? "X" : "O"
 end
 
 board = Array.new(9, " ")
