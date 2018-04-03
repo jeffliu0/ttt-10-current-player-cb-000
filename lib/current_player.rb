@@ -2,7 +2,8 @@ def turn_count(board)
   counter = 0
   board.each do |player|
     puts "Player : #{player}"
-    counter += 1
+    if player != " ","", nil do
+      counter += 1
   end
   return counter
 end
