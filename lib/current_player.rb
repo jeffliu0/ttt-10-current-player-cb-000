@@ -13,5 +13,5 @@ def current_player(board)
   return turn_count(board)%2 == 1 ? "X" : "O"
 end
 
-board = Array.new(9, " ")
+board = board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
 puts turn_count(board)
