@@ -13,3 +13,5 @@ def current_player(board)
     return "O"
   end
 end
+
+board = Array.new(9, " ")
